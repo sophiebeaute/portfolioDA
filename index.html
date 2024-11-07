@@ -5,12 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV interactif - Sophie Beauté</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        iframe { border: none; width: 100%; height: 80vh; }
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .tableauPlaceholder { width: 100%; height: 600px; }
     </style>
 </head>
 <body>
-    <h1>Mon CV </h1>
-    <iframe src="https://public.tableau.com/views/Resume_17309878723930/Tableaudebord1?:language=fr-FR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" allowfullscreen></iframe>
+    <h1>Mon CV interactif</h1>
+
+    <!-- Code d'intégration de votre Tableau Public -->
+    <div class='tableauPlaceholder' id='viz1730988726781' style='position: relative'>
+        <noscript>
+            <a href='#'>
+                <img alt='DATA VISUALISATION FREELANCESOPHIE BEAUTEFaites parler vos données grâce à des visuels attrayants et compréhensibles' src='https://public.tableau.com/static/images/Re/Resume_17309878723930/Tableaudebord1/1_rss.png' style='border: none' />
+            </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Resume_17309878723930/Tableaudebord1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Re/Resume_17309878723930/Tableaudebord1/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='fr-FR' />
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1730988726781');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if ( divElement.offsetWidth > 800 ) { 
+            vizElement.style.minWidth='1500px'; 
+            vizElement.style.maxWidth='1520px'; 
+            vizElement.style.width='100%'; 
+            vizElement.style.minHeight='1027px'; 
+            vizElement.style.maxHeight='1187px'; 
+            vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+        } else if ( divElement.offsetWidth > 500 ) { 
+            vizElement.style.minWidth='1500px'; 
+            vizElement.style.maxWidth='1520px'; 
+            vizElement.style.width='100%'; 
+            vizElement.style.minHeight='1027px'; 
+            vizElement.style.maxHeight='1187px'; 
+            vizElement.style.height=(divElement.offsetWidth*0.75)+'px'; 
+        } else { 
+            vizElement.style.width='100%'; 
+            vizElement.style.height='1827px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 </body>
 </html>
